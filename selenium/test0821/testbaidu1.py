@@ -8,7 +8,7 @@ class Baidu1(unittest.TestCase):  # ()内继承
         self.driver = webdriver.Chrome()   #  self 全局变量
         self.url = "https://www.baidu.com/"
         # self.driver.maximize_window()
-        time.sleep(3)
+        time.sleep(1)
         # self.driver.get(self.url)
     def tearDown(self):
         self.driver.quit()
@@ -17,7 +17,7 @@ class Baidu1(unittest.TestCase):  # ()内继承
         url = self.url
         driver.get(url)
         driver.find_element_by_link_text("hao123").click()
-        time.sleep(6)
+        time.sleep(3)
 #   测试用例  格式  test_
     def test_baidu(self):
         driver = self.driver
@@ -25,7 +25,7 @@ class Baidu1(unittest.TestCase):  # ()内继承
         driver.get(url)
         driver.find_element_by_id("kw").send_keys("你的名字")
         driver.find_element_by_id("su").click()
-        time.sleep(6)
+        time.sleep(3)
 
     if __name__ == "__main__":
         unittest.main(verbosity=0)
