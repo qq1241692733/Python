@@ -1,0 +1,260 @@
+{
+  "uid" : "4c2f56e5f71a0239",
+  "name" : "test_buy_now_exception[产品已删除-551-1-500-004-不合法]",
+  "fullName" : "test_shop_apis.TestBuyNowApi#test_buy_now_exception",
+  "historyId" : "e26529d94727ebe95c16eaf0d6141d1a",
+  "time" : {
+    "start" : 1676553886864,
+    "stop" : 1676553887057,
+    "duration" : 193
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 200 == 500\n +  where 200 = <Response [200]>.status_code",
+  "statusTrace" : "self = <pytest_study.test_shop_apis.TestBuyNowApi object at 0x000001E850511940>\ncasename = '产品已删除', sku_id = '551', num = 1, except_status = 500\nexcept_data_code = '004', except_data_message = '不合法'\n\n    @pytest.mark.parametrize('casename, sku_id, num, except_status, except_data_code, except_data_message', test_data)\n    def test_buy_now_exception(self, casename, sku_id, num, except_status, except_data_code, except_data_message):\n        # buyer_login()\n        # sku_id 不是商品id，而是商品的产品id\n        resp = buy_now(sku_id=sku_id, num=num)\n        print(\"相应信息：\", resp.text)\n>       assert resp.status_code == except_status\nE       assert 200 == 500\nE        +  where 200 = <Response [200]>.status_code\n\ntest_shop_apis.py:87: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestBuyNowApi",
+    "time" : {
+      "start" : 1676553886863,
+      "stop" : 1676553886863,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_function_fixture_pytest_study.test_shop_apis",
+    "time" : {
+      "start" : 1676553886863,
+      "stop" : 1676553886863,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestBuyNowApi",
+    "time" : {
+      "start" : 1676553886015,
+      "stop" : 1676553886015,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "creat_goods",
+    "time" : {
+      "start" : 1676553886015,
+      "stop" : 1676553886015,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_module_fixture_pytest_study.test_shop_apis",
+    "time" : {
+      "start" : 1676553886015,
+      "stop" : 1676553886015,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "buyer_token",
+    "time" : {
+      "start" : 1676553885402,
+      "stop" : 1676553885754,
+      "duration" : 352
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestBuyNowApi::0",
+    "time" : {
+      "start" : 1676553887066,
+      "stop" : 1676553887066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_function_fixture_pytest_study.test_shop_apis::0",
+    "time" : {
+      "start" : 1676553887067,
+      "stop" : 1676553887067,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_class_fixture_TestBuyNowApi::0",
+    "time" : {
+      "start" : 1676553887641,
+      "stop" : 1676553887641,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "creat_goods::0",
+    "time" : {
+      "start" : 1676553887640,
+      "stop" : 1676553887640,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_module_fixture_pytest_study.test_shop_apis::0",
+    "time" : {
+      "start" : 1676553891865,
+      "stop" : 1676553891865,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "buyer_token::0",
+    "time" : {
+      "start" : 1676553891866,
+      "stop" : 1676553891866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('creat_goods')"
+  }, {
+    "name" : "suite",
+    "value" : "test_shop_apis"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBuyNowApi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OU7UF4S"
+  }, {
+    "name" : "thread",
+    "value" : "24172-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_shop_apis"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "casename",
+    "value" : "'产品已删除'"
+  }, {
+    "name" : "except_data_code",
+    "value" : "'004'"
+  }, {
+    "name" : "except_data_message",
+    "value" : "'不合法'"
+  }, {
+    "name" : "except_status",
+    "value" : "500"
+  }, {
+    "name" : "num",
+    "value" : "1"
+  }, {
+    "name" : "sku_id",
+    "value" : "'551'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "@pytest.mark.usefixtures('creat_goods')" ]
+  },
+  "source" : "4c2f56e5f71a0239.json",
+  "parameterValues" : [ "'产品已删除'", "'004'", "'不合法'", "500", "1", "'551'" ]
+}

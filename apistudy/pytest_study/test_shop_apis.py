@@ -10,11 +10,36 @@ import pytest
 
 from sdk.shop_apis import *
 
+def setup_module():
+    print("当前文件执行前，执行我")
+    # buyer_login()
 
+def teardown_module():
+    print("当前文件执行完，执行我")
+
+# 以下两个是针对方法的普通测试用例的，针对类中测试方法无效
+def setup_function():
+    print("每个函数执行前执行我")
+def teardown_function():
+    print("每个函数执行前执行我")
+
+# 也可以放到方法的参数中，但是只会执行一次，在同一个类下
+@pytest.mark.usefixtures('creat_goods')
 class TestBuyNowApi:
+    def setup_class(self):
+        print("当前测试类执行前执行我")
+    def teardown_class(self):
+        print("当前测试类函数执行前执行我")
+
+    def setup_method(self):
+        print("当前类每个测试方法执行前执行我")
+    def teardown_method(self):
+        print("当前类每个测试方法执行前执行我")
+
     # 成功购买
-    def test_buy_now_sccess(self):
-        buyer_login()
+    def test_buy_now_sccess(self, creat_goods):
+        print(f'这是重fixture里得到的商品数据：{creat_goods}')
+        # buyer_login()
         # sku_id 不是商品id，而是商品的产品id
         resp = buy_now(sku_id=541)
         assert resp.status_code == 200
@@ -22,7 +47,7 @@ class TestBuyNowApi:
 
     # sku_id 不存在
     def test_buy_now_skuid_not_exsits(self):
-        buyer_login()
+        # buyer_login()
         # sku_id 不是商品id，而是商品的产品id
         resp = buy_now(sku_id=51812265)
         assert resp.status_code == 500
@@ -44,18 +69,18 @@ class TestBuyNowApi:
 
     test_data = [
         #[sku_id, num, 状态码, data.code, data.message]
-        ['4882626',     1, 500, '004', '不合法'],
-        ['542',         1, 500, '004', '不合法'],
-        ['551',         1, 500, '004', '不合法'],
-        ['541', 999999999, 500, '451', '商品库存已不足，不能购买。'],
-        ['541',        -1, 400, '004', '购买数量必须大于0'],
-        ['541',         0, 400, '004', '购买数量必须大于0']
+        ['sku_id 不存在', '4882626',     1, 500, '004', '不合法'],
+        ['产品已下架', '542',         1, 500, '004', '不合法'],
+        ['产品已删除', '551',         1, 500, '004', '不合法'],
+        ['num超过库存', '541', 999999999, 500, '451', '商品库存已不足，不能购买。'],
+        ['num为负数', '541',        -1, 400, '004', '购买数量必须大于0'],
+        ['num为0', '541',         0, 400, '004', '购买数量必须大于0']
     ]
 
     # 异常的用例
-    @pytest.mark.parametrize('sku_id, num, except_status, except_data_code, except_data_message', test_data)
-    def test_buy_now_exception(self, sku_id, num, except_status, except_data_code, except_data_message):
-        buyer_login()
+    @pytest.mark.parametrize('casename, sku_id, num, except_status, except_data_code, except_data_message', test_data)
+    def test_buy_now_exception(self, casename, sku_id, num, except_status, except_data_code, except_data_message):
+        # buyer_login()
         # sku_id 不是商品id，而是商品的产品id
         resp = buy_now(sku_id=sku_id, num=num)
         print("相应信息：", resp.text)
@@ -73,7 +98,7 @@ class TestCreateTradeApi:
     @pytest.mark.parametrize('client', client_data) # 5
     @pytest.mark.parametrize('way', way_data)       # 2
     def test_create_trade(self, client, way):
-        buyer_login()
+        # buyer_login()
         # 创建交易接口的数据来源于立即购买接口个添加购物车接口
         # 如果way为BUY_NOW则需要先调用立即购买接口3.
         # 如果way是CART则需要先调用添加购物车接口

@@ -1,0 +1,149 @@
+{
+  "uid" : "cfc41068a5d79f5d",
+  "name" : "test_create_trade[BUY_NOW-PC]",
+  "fullName" : "test_shop_apis.TestCreateTradeApi#test_create_trade",
+  "historyId" : "30c30da7c290c80793928ad84b48ece4",
+  "time" : {
+    "start" : 1676553887644,
+    "stop" : 1676553888061,
+    "duration" : 417
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_function_fixture_pytest_study.test_shop_apis",
+    "time" : {
+      "start" : 1676553887643,
+      "stop" : 1676553887643,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_module_fixture_pytest_study.test_shop_apis",
+    "time" : {
+      "start" : 1676553886015,
+      "stop" : 1676553886015,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "buyer_token",
+    "time" : {
+      "start" : 1676553885402,
+      "stop" : 1676553885754,
+      "duration" : 352
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "_xunit_setup_function_fixture_pytest_study.test_shop_apis::0",
+    "time" : {
+      "start" : 1676553888062,
+      "stop" : 1676553888062,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_module_fixture_pytest_study.test_shop_apis::0",
+    "time" : {
+      "start" : 1676553891865,
+      "stop" : 1676553891865,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "buyer_token::0",
+    "time" : {
+      "start" : 1676553891866,
+      "stop" : 1676553891866,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_shop_apis"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCreateTradeApi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OU7UF4S"
+  }, {
+    "name" : "thread",
+    "value" : "24172-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_shop_apis"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "client",
+    "value" : "'PC'"
+  }, {
+    "name" : "way",
+    "value" : "'BUY_NOW'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cfc41068a5d79f5d.json",
+  "parameterValues" : [ "'PC'", "'BUY_NOW'" ]
+}
