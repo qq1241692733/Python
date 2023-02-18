@@ -19,8 +19,8 @@ def buyer_login():
     }
     # 表单参数使用data表示
     data = {
-        "username":"shamo",
-        "password":"0659c7992e268962384eb17fafe88364",
+        "username":"hongyao",
+        "password":"e10adc3949ba59abbe56e057f20f883e",
         "captcha":"1512",
         "uuid":"asdjhsadhahsddhds"
     }
@@ -80,3 +80,4 @@ def buyer_comment():
 if __name__ == '__main__':
     buyer_login()
     buyer_comment()
+

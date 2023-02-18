@@ -1,13 +1,15 @@
 """
     Created with PyCharm.
     Description:
-    文档注释 一般用于 方法的注释和类的注释
+        uid  63459
     User: hong yaO
     Date: 2023-02-2023/2/15
     Time: 15:00
 """
+import javaobj
 import pytest
 
+from redis_study.redis_connect import RedisUtil
 from sdk.shop_apis import *
 
 def setup_module():
@@ -37,13 +39,21 @@ class TestBuyNowApi:
         print("当前类每个测试方法执行前执行我")
 
     # 成功购买
-    def test_buy_now_sccess(self, creat_goods):
+    def test_buy_now_sccess(self, creat_goods, buyer_token):
+        uid = buyer_token
+        print(uid)
         print(f'这是重fixture里得到的商品数据：{creat_goods}')
         # buyer_login()
         # sku_id 不是商品id，而是商品的产品id
         resp = buy_now(sku_id=541)
         assert resp.status_code == 200
         print("相应信息：", resp.text)
+        redis_util = RedisUtil(host='82.156.74.26', pwd='mtx')
+        res = redis_util.get(f'{{BUY_NOW_ORIGIN_DATA_PREFIX}}_{uid}')
+        res_obj = javaobj.loads(res)
+        order_info = res_obj[0]
+        assert order_info.__getattribute__('num') == 1
+        assert order_info.__getattribute__('sku_id') == 541
 
     # sku_id 不存在
     def test_buy_now_skuid_not_exsits(self):
@@ -113,3 +123,26 @@ class TestCreateTradeApi:
     # def test_create_trade(self):
     #     buyer_login()
     #     create_trade(client='WAP', way='BUY_NOW')
+
+class TestCheckoutParamsApis:
+
+
+    def test_create_trade(self, buyer_token, redis_util):
+        uid = buyer_token
+        print("*************", uid)
+        resp = set_addressid(5416)
+        assert resp.status_code == 200
+        # 返回为空，去断言 redis 中的数据
+        redis_util = RedisUtil(host='82.156.74.26', pwd='mtx')
+        res = redis_util.get(f'{{CHECKOUT_PARAM_ID_PREFIX}}_{uid}')
+        print(res)
+        # 打印发现 是个map，不能整体转换
+        for key, value in res.items():
+            key1 = javaobj.loads(key)
+            try:
+                value1 = javaobj.loads(value)
+                print(f'{key1}:{value1}')
+            except:
+                pass
+            if key1 == 'address_id':
+                assert value1 == 5416

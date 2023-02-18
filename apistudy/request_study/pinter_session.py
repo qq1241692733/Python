@@ -10,16 +10,17 @@ import requests
 
 session = requests.session()
 
-def case_login():
+def case_login(username='admin', password='1234'):
     url = 'http://82.156.74.26:9088/pinter/bank/api/login'
 
     params = {
-        "userName": "admin",
-        "password": "1234"
+        "userName": username,
+        "password": password
     }
     #resp = requests.post(url=url, params=params)
     resp = session.post(url=url, params=params)
     print(resp.json())
+    return resp
 
 def case_query():
     url = 'http://82.156.74.26:9088/pinter/bank/api/query'

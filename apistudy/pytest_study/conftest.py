@@ -12,6 +12,7 @@ from typing import List
 
 import pytest
 
+from redis_study.redis_connect import RedisUtil
 from sdk.shop_apis import buyer_login
 
 
@@ -29,10 +30,11 @@ def pytest_collection_modifyitems(
 # 自定义 fixture 完成登录
 @pytest.fixture(scope='session', autouse=True)
 def buyer_token():
-    buyer_login()
+    resp = buyer_login()
+    uid = resp.json()['uid']
     print()
     print("这个是 conftest 中的买家登录")
-    yield  # 后置处理
+    yield uid   # 后置处理
     print("买家退出登录")
 '''
 scope 作用域：
@@ -54,3 +56,8 @@ def creat_goods():
     print("创建一个商品")
     yield '商品id:1'
     print('清除商品数据')
+
+@pytest.fixture(scope='session', autouse=False)
+def redis_util():
+    redis_util1 = RedisUtil(host='82.156.74.26', pwd='mtx')
+    return redis_util1
