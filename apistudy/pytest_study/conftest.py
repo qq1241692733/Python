@@ -12,6 +12,7 @@ from typing import List
 
 import pytest
 
+from db_study.db_util import DBUtil
 from redis_study.redis_connect import RedisUtil
 from sdk.shop_apis import buyer_login
 
@@ -61,3 +62,10 @@ def creat_goods():
 def redis_util():
     redis_util1 = RedisUtil(host='82.156.74.26', pwd='mtx')
     return redis_util1
+
+
+@pytest.fixture(scope='session', autouse=False)
+def db_connect():
+    db_util = DBUtil(host="82.156.74.26", user='root', password='Testfan#123')
+    yield db_util
+    db_util.close()

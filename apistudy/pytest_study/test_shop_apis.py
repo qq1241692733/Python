@@ -6,9 +6,13 @@
     Date: 2023-02-2023/2/15
     Time: 15:00
 """
+import json
+
 import javaobj
+import jsonpath
 import pytest
 
+from db_study.db_util import DBUtil
 from redis_study.redis_connect import RedisUtil
 from sdk.shop_apis import *
 
@@ -80,11 +84,11 @@ class TestBuyNowApi:
     test_data = [
         #[sku_id, num, 状态码, data.code, data.message]
         ['sku_id 不存在', '4882626',     1, 500, '004', '不合法'],
-        ['产品已下架', '542',         1, 500, '004', '不合法'],
-        ['产品已删除', '551',         1, 500, '004', '不合法'],
-        ['num超过库存', '541', 999999999, 500, '451', '商品库存已不足，不能购买。'],
-        ['num为负数', '541',        -1, 400, '004', '购买数量必须大于0'],
-        ['num为0', '541',         0, 400, '004', '购买数量必须大于0']
+        ['产品已下架',     '542',         1, 500, '004', '不合法'],
+        ['产品已删除',     '551',         1, 500, '004', '不合法'],
+        ['num超过库存',    '541', 999999999, 500, '451', '商品库存已不足，不能购买。'],
+        ['num为负数',      '541',        -1, 400, '004', '购买数量必须大于0'],
+        ['num为0',        '541',         0, 400, '004', '购买数量必须大于0']
     ]
 
     # 异常的用例
@@ -107,7 +111,7 @@ class TestCreateTradeApi:
     way_data = ['BUY_NOW', 'CART']
     @pytest.mark.parametrize('client', client_data) # 5
     @pytest.mark.parametrize('way', way_data)       # 2
-    def test_create_trade(self, client, way):
+    def test_create_trade(self, client, way, db_connect):
         # buyer_login()
         # 创建交易接口的数据来源于立即购买接口个添加购物车接口
         # 如果way为BUY_NOW则需要先调用立即购买接口3.
@@ -120,6 +124,29 @@ class TestCreateTradeApi:
             carts_add(sku_id=541)
         resp = create_trade(client=client, way=way)
         print(resp.text)
+        assert resp.status_code == 200
+
+        # 创建交易将订单数据存入数据库，那么如何校验数据的正确性
+        # 从响应信息中得到 trad_sn，然后去数据库中去，看订单的 sku_id 和 num 是否和下单一致
+        # trade_sn = resp.json()['trade_sn'] ，  trade_sn 和 sn 使用sn
+
+        # jsonpath, 匹配到一定是列表，不配不到是false
+        trade_sn = jsonpath.jsonpath(resp.json(), '$..sn')[0]
+        res = db_connect.select(f"SELECT * FROM mtxshop_trade.es_order where trade_sn={trade_sn};")
+        print(type(res), res)
+        items_json = res[0]['items_json']
+        items_json = json.loads(items_json)
+        db_sku_id = items_json[0]['sku_id']
+        db_num = items_json[0]['num']
+        print(res)
+        assert len(res) == 1
+        assert db_num == 1
+        assert db_sku_id == 541
+        print("====================")
+
+
+
+
     # def test_create_trade(self):
     #     buyer_login()
     #     create_trade(client='WAP', way='BUY_NOW')
