@@ -42,7 +42,7 @@ class TestBuyNowApi:
     def teardown_method(self):
         print("当前类每个测试方法执行前执行我")
 
-    # 成功购买
+    # 成功购买  redis
     def test_buy_now_sccess(self, creat_goods, buyer_token):
         uid = buyer_token
         print(uid)

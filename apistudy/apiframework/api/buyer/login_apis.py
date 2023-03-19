@@ -9,7 +9,6 @@
 from api.baseapi import BaseBuyerApi
 
 
-
 class BuyerLoginApi(BaseBuyerApi):
     
     def __init__(self, username, password):

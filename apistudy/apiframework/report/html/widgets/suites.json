@@ -1,15 +1,4 @@
 {
-  "total" : 1,
-  "items" : [ {
-    "uid" : "3333883924ce37e7c29124506bd113c6",
-    "name" : "testcase.buyer",
-    "statistic" : {
-      "failed" : 2,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 4,
-      "unknown" : 0,
-      "total" : 6
-    }
-  } ]
+  "total" : 0,
+  "items" : [ ]
 }

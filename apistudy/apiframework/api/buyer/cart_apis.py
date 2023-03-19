@@ -22,7 +22,24 @@ class BuyNowApi(BaseBuyerApi):
             'activity_id': ''
         }
 
+class AddCartApi(BaseBuyerApi):
 
+    def __init__(self,sku_id,num=1):
+        super().__init__()
+        self.url = f'{self.host}/trade/carts'
+        self.method = 'post'
+        self.data = {
+        # 注意sku_id并不是商品id，而是商品id所对应的sku_id
+        # 可以通过查mtxshop_goods库获取，SELECT * FROM `es_goods_sku` where goods_id=21640;
+            'sku_id': sku_id,
+            'num': num,
+            'activity_id': ''
+        }
+class DeleteCartApi(BaseBuyerApi):
+    def __init__(self):
+        super().__init__()
+        self.url = f'{self.host}/trade/carts'
+        self.method = 'delete'
 if __name__ == '__main__':
     buyer_login_api = BuyerLoginApi(username="hongyao", password="e10adc3949ba59abbe56e057f20f883e")
     resp = buyer_login_api.send().json()
