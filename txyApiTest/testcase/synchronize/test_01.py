@@ -15,6 +15,6 @@ from sdk.syn_apis import describeReplicateJobs
 class Testsyn:
 
     def test_describeReplicateJobs(self):
-        now = cur_timestamp()
-        resp = describeReplicateJobs(t=now)
+        time = cur_timestamp()
+        resp = describeReplicateJobs(t=time)
         assert resp["code"] == 0

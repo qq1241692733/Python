@@ -2,7 +2,6 @@ import jsonpath
 from jsonpath_rw import  Index, Fields
 from jsonpath_rw_ext import parse
 
-from common.logger import GetLogger
 
 
 def extract_json(json_obejct, express, index=0):
