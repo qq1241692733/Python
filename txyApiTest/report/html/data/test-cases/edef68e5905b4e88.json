@@ -1,0 +1,150 @@
+{
+  "uid" : "edef68e5905b4e88",
+  "name" : "num超过库存",
+  "fullName" : "testcase.buyer.test_003_add_cart.TestAddCartApi#test_add_cart",
+  "historyId" : "8d2a53c4b85c514fe1f780ec4c423dbf",
+  "time" : {
+    "start" : 1683884667334,
+    "stop" : 1683884667481,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1683884664412,
+      "stop" : 1683884664916,
+      "duration" : 504
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "worker_id",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664917,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_buyer_token",
+    "time" : {
+      "start" : 1683884664959,
+      "stop" : 1683884665298,
+      "duration" : 339
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "aaget_logger",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664959,
+      "duration" : 42
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "25a9adab4305594c",
+      "name" : "log",
+      "source" : "25a9adab4305594c.txt",
+      "type" : "text/plain",
+      "size" : 1019
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "买家接口测试"
+  }, {
+    "name" : "story",
+    "value" : "添加购物车接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.buyer"
+  }, {
+    "name" : "suite",
+    "value" : "test_003_add_cart"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddCartApi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OU7UF4S"
+  }, {
+    "name" : "thread",
+    "value" : "22160-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.buyer.test_003_add_cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "casename",
+    "value" : "'num超过库存'"
+  }, {
+    "name" : "expect_status",
+    "value" : "500"
+  }, {
+    "name" : "num",
+    "value" : "99999999"
+  }, {
+    "name" : "sku_id",
+    "value" : "22064"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "edef68e5905b4e88.json",
+  "parameterValues" : [ "'num超过库存'", "500", "99999999", "22064" ]
+}

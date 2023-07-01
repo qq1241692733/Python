@@ -1,0 +1,194 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "pymysql.err.OperationalError: (1045, \"Access denied for user 'root'@'1.85.49.19' (using password: YES)\")",
+      "children" : [ {
+        "name" : "test_create_trade[BUY_NOW-PC]",
+        "uid" : "8fc67b97955ea47",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884664410,
+          "stop" : 1683884664410,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'PC'", "'BUY_NOW'" ]
+      }, {
+        "name" : "test_create_trade[BUY_NOW-WAP]",
+        "uid" : "87611e4423eb499",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884666997,
+          "stop" : 1683884666997,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'WAP'", "'BUY_NOW'" ]
+      }, {
+        "name" : "test_create_trade[BUY_NOW-NATIVE]",
+        "uid" : "636183411ae79263",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667055,
+          "stop" : 1683884667055,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'NATIVE'", "'BUY_NOW'" ]
+      }, {
+        "name" : "test_create_trade[BUY_NOW-MINI]",
+        "uid" : "3523f987b0c4aa92",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667115,
+          "stop" : 1683884667115,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'MINI'", "'BUY_NOW'" ]
+      }, {
+        "name" : "test_create_trade[CART-PC]",
+        "uid" : "395447b138a9c607",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667186,
+          "stop" : 1683884667186,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'PC'", "'CART'" ]
+      }, {
+        "name" : "test_create_trade[CART-WAP]",
+        "uid" : "36fc05079ecb52e1",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667247,
+          "stop" : 1683884667247,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'WAP'", "'CART'" ]
+      }, {
+        "name" : "test_create_trade[CART-NATIVE]",
+        "uid" : "1efe2220dd514ee",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667324,
+          "stop" : 1683884667324,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'NATIVE'", "'CART'" ]
+      }, {
+        "name" : "test_create_trade[CART-MINI]",
+        "uid" : "3ebd6b0f94110d8f",
+        "parentUid" : "a8940f8da37e117b66f0b5164cb4f410",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667385,
+          "stop" : 1683884667385,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'MINI'", "'CART'" ]
+      } ],
+      "uid" : "a8940f8da37e117b66f0b5164cb4f410"
+    }, {
+      "name" : "redis.exceptions.ConnectionError: Error 10061 connecting to 82.156.74.26:6379. 由于目标计算机积极拒绝，无法连接。.",
+      "children" : [ {
+        "name" : "test_buy_now_sccess",
+        "uid" : "6fd7920db0241d6",
+        "parentUid" : "47b8c3fdf3092452b50090956d095745",
+        "status" : "broken",
+        "time" : {
+          "start" : 1683884667515,
+          "stop" : 1683884669802,
+          "duration" : 2287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "47b8c3fdf3092452b50090956d095745"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 200 == 500\n +  where 200 = <Response [200]>.status_code",
+      "children" : [ {
+        "name" : "sku_id已下架",
+        "uid" : "d1c20a281d93b50f",
+        "parentUid" : "a80967938b4674994a632217f0eb5b59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1683884665484,
+          "stop" : 1683884665622,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'sku_id已下架'", "500", "1", "20046" ]
+      }, {
+        "name" : "test_buy_now_exception[产品已下架-542-1-500-004-不合法]",
+        "uid" : "e81b5d63bd030bb2",
+        "parentUid" : "a80967938b4674994a632217f0eb5b59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1683884665486,
+          "stop" : 1683884665606,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'产品已下架'", "'004'", "'不合法'", "500", "1", "'542'" ]
+      }, {
+        "name" : "sku_id已删除",
+        "uid" : "b69a7ab91bb71d42",
+        "parentUid" : "a80967938b4674994a632217f0eb5b59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1683884666998,
+          "stop" : 1683884667070,
+          "duration" : 72
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'sku_id已删除'", "500", "1", "22441" ]
+      }, {
+        "name" : "test_buy_now_exception[产品已删除-551-1-500-004-不合法]",
+        "uid" : "4102c843c7eb54ca",
+        "parentUid" : "a80967938b4674994a632217f0eb5b59",
+        "status" : "failed",
+        "time" : {
+          "start" : 1683884667004,
+          "stop" : 1683884667109,
+          "duration" : 105
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'产品已删除'", "'004'", "'不合法'", "500", "1", "'551'" ]
+      } ],
+      "uid" : "a80967938b4674994a632217f0eb5b59"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

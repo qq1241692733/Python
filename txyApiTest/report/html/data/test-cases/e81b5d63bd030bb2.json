@@ -1,0 +1,158 @@
+{
+  "uid" : "e81b5d63bd030bb2",
+  "name" : "test_buy_now_exception[产品已下架-542-1-500-004-不合法]",
+  "fullName" : "testcase.buyer.test_001_buy_now.TestBuyNowApi#test_buy_now_exception",
+  "historyId" : "cbce805dbdf0b709823f2c939797aeb7",
+  "time" : {
+    "start" : 1683884665486,
+    "stop" : 1683884665606,
+    "duration" : 120
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 200 == 500\n +  where 200 = <Response [200]>.status_code",
+  "statusTrace" : "self = <testcase.buyer.test_001_buy_now.TestBuyNowApi object at 0x000002EBE2F5F1C0>\ncasename = '产品已下架', sku_id = '542', num = 1, except_status = 500\nexcept_data_code = '004', except_data_message = '不合法'\n\n    @pytest.mark.parametrize('casename, sku_id, num, except_status, except_data_code, except_data_message', test_data)\n    def test_buy_now_exception(self, casename, sku_id, num, except_status, except_data_code, except_data_message):\n        # 最后这个aa，是主动调用fixture函数aa\n        # 调用立即购买接口，传入测试数据\n        resp = BuyNowApi(sku_id=sku_id, num=num).send()\n        print(\"相应信息：\", resp.text)\n>       assert resp.status_code == except_status\nE       assert 200 == 500\nE        +  where 200 = <Response [200]>.status_code\n\ntestcase\\buyer\\test_001_buy_now.py:40: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1683884664412,
+      "stop" : 1683884664917,
+      "duration" : 505
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "aaget_logger",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664969,
+      "duration" : 52
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_buyer_token",
+    "time" : {
+      "start" : 1683884664969,
+      "stop" : 1683884665312,
+      "duration" : 343
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "worker_id",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664917,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 200 == 500\n +  where 200 = <Response [200]>.status_code",
+    "statusTrace" : "self = <testcase.buyer.test_001_buy_now.TestBuyNowApi object at 0x000002EBE2F5F1C0>\ncasename = '产品已下架', sku_id = '542', num = 1, except_status = 500\nexcept_data_code = '004', except_data_message = '不合法'\n\n    @pytest.mark.parametrize('casename, sku_id, num, except_status, except_data_code, except_data_message', test_data)\n    def test_buy_now_exception(self, casename, sku_id, num, except_status, except_data_code, except_data_message):\n        # 最后这个aa，是主动调用fixture函数aa\n        # 调用立即购买接口，传入测试数据\n        resp = BuyNowApi(sku_id=sku_id, num=num).send()\n        print(\"相应信息：\", resp.text)\n>       assert resp.status_code == except_status\nE       assert 200 == 500\nE        +  where 200 = <Response [200]>.status_code\n\ntestcase\\buyer\\test_001_buy_now.py:40: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "370cbb30ea6529b3",
+      "name" : "log",
+      "source" : "370cbb30ea6529b3.txt",
+      "type" : "text/plain",
+      "size" : 950
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase.buyer"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_buy_now"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBuyNowApi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OU7UF4S"
+  }, {
+    "name" : "thread",
+    "value" : "17716-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.buyer.test_001_buy_now"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "casename",
+    "value" : "'产品已下架'"
+  }, {
+    "name" : "except_data_code",
+    "value" : "'004'"
+  }, {
+    "name" : "except_data_message",
+    "value" : "'不合法'"
+  }, {
+    "name" : "except_status",
+    "value" : "500"
+  }, {
+    "name" : "num",
+    "value" : "1"
+  }, {
+    "name" : "sku_id",
+    "value" : "'542'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e81b5d63bd030bb2.json",
+  "parameterValues" : [ "'产品已下架'", "'004'", "'不合法'", "500", "1", "'542'" ]
+}

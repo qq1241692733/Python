@@ -1,0 +1,9 @@
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的url是:http://www.mtxshop.com:7002/trade/carts
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的method是:post
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的headers是:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJ1aWQiOjYzNDU5LCJzdWIiOiJCVVlFUiIsInJvbGVzIjpbIkJVWUVSIl0sImV4cCI6MTY4Mzg4NTg2MiwidXVpZCI6bnVsbCwidXNlcm5hbWUiOiJob25neWFvIn0.CFO5-tQg9pSzvsZ7zXhtd8jINLN74LDRrspl7XPKX4UNwECp_cIFM96wKWmG55wV00rpE2SIc8ilNzz9TyrRFQ'}
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的params是:None
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的data是:{'sku_id': 22441, 'num': 1, 'activity_id': ''}
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的json是:None
+2023-05-12 17:44:26 [clinet.py:52  ] [ INFO] 接口的files是:None
+2023-05-12 17:44:27 [clinet.py:59  ] [ INFO] 接口响应状态码是:200
+2023-05-12 17:44:27 [clinet.py:60  ] [ INFO] 接口响应信息是:{"sku_id":22441,"goods_id":22109,"goods_name":"兰蔻第二代小黑瓶","sn":"LK2022122201","quantity":1000,"enable_quantity":1000,"price":669.0,"cost":559.0,"weight":0.1,"seller_id":20,"seller_name":"沙陌的店","category_id":387,"thumbnail":"http://82.156.74.26:7000/statics/attachment/goods/2022/12/22/11/02466438.jpeg_300x300.jpeg","hash_code":-1,"template_id":0,"spec_list":null,"goods_transfee_charge":1,"disabled":1,"market_enable":1,"goods_type":"NORMAL","last_modify":1677228646,"scripts":null,"num":1,"checked":1,"single_list":[],"group_list":[]}

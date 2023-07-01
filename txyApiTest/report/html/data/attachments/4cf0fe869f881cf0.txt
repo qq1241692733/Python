@@ -1,0 +1,9 @@
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的url是:http://www.mtxshop.com:7002/trade/carts
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的method是:post
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的headers是:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJ1aWQiOjYzNDU5LCJzdWIiOiJCVVlFUiIsInJvbGVzIjpbIkJVWUVSIl0sImV4cCI6MTY4Mzg4NTg2MiwidXVpZCI6bnVsbCwidXNlcm5hbWUiOiJob25neWFvIn0.CFO5-tQg9pSzvsZ7zXhtd8jINLN74LDRrspl7XPKX4UNwECp_cIFM96wKWmG55wV00rpE2SIc8ilNzz9TyrRFQ'}
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的params是:None
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的data是:{'sku_id': 20046, 'num': 1, 'activity_id': ''}
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的json是:None
+2023-05-12 17:44:25 [clinet.py:52  ] [ INFO] 接口的files是:None
+2023-05-12 17:44:25 [clinet.py:59  ] [ INFO] 接口响应状态码是:200
+2023-05-12 17:44:25 [clinet.py:60  ] [ INFO] 接口响应信息是:{"sku_id":20046,"goods_id":19756,"goods_name":"沙陌炒锅0726班","sn":"sn0726001","quantity":99999999,"enable_quantity":99999999,"price":288.0,"cost":18.0,"weight":1.0,"seller_id":20,"seller_name":"沙陌的店","category_id":83,"thumbnail":"http://82.156.74.26:7000/statics/attachment/goods/2022/9/22/20/11591023.png_300x300.png","hash_code":-1,"template_id":0,"spec_list":null,"goods_transfee_charge":1,"disabled":1,"market_enable":1,"goods_type":"NORMAL","last_modify":1675582195,"scripts":null,"num":1,"checked":1,"single_list":[],"group_list":[]}

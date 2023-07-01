@@ -1,0 +1,9 @@
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的url是:http://www.mtxshop.com:7002/trade/carts/buy
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的method是:post
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的headers是:{'Authorization': 'eyJhbGciOiJIUzUxMiJ9.eyJ1aWQiOjYzNDU5LCJzdWIiOiJCVVlFUiIsInJvbGVzIjpbIkJVWUVSIl0sImV4cCI6MTY4Mzg4NTg2MiwidXVpZCI6bnVsbCwidXNlcm5hbWUiOiJob25neWFvIn0.CFO5-tQg9pSzvsZ7zXhtd8jINLN74LDRrspl7XPKX4UNwECp_cIFM96wKWmG55wV00rpE2SIc8ilNzz9TyrRFQ'}
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的params是:None
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的data是:{'sku_id': '551', 'num': 1, 'activity_id': ''}
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的json是:None
+2023-05-12 17:44:27 [clinet.py:52  ] [ INFO] 接口的files是:None
+2023-05-12 17:44:27 [clinet.py:59  ] [ INFO] 接口响应状态码是:200
+2023-05-12 17:44:27 [clinet.py:60  ] [ INFO] 接口响应信息是:

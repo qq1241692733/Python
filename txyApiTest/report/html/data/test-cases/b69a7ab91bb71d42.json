@@ -1,0 +1,158 @@
+{
+  "uid" : "b69a7ab91bb71d42",
+  "name" : "sku_id已删除",
+  "fullName" : "testcase.buyer.test_003_add_cart.TestAddCartApi#test_add_cart",
+  "historyId" : "b90e062c982d0180e27d14b65dd62dd0",
+  "time" : {
+    "start" : 1683884666998,
+    "stop" : 1683884667070,
+    "duration" : 72
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 200 == 500\n +  where 200 = <Response [200]>.status_code",
+  "statusTrace" : "self = <testcase.buyer.test_003_add_cart.TestAddCartApi object at 0x00000255671CC880>\ncasename = 'sku_id已删除', sku_id = 22441, num = 1, expect_status = 500\n\n    @allure.story('添加购物车接口测试')\n    @allure.title('{casename}')\n    @pytest.mark.parametrize('casename,sku_id,num,expect_status', test_data)\n    def test_add_cart(self, casename, sku_id, num, expect_status):\n        # buyer_login()\n        # 调用立即购买接口，传入测试数据\n        resp = AddCartApi(sku_id=sku_id, num=num).send()\n        print(resp.text)\n        # 针对结果做断言\n        # 响应状态码\n>       assert resp.status_code == expect_status\nE       assert 200 == 500\nE        +  where 200 = <Response [200]>.status_code\n\ntestcase\\buyer\\test_003_add_cart.py:31: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1683884664412,
+      "stop" : 1683884664916,
+      "duration" : 504
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "worker_id",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664917,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_buyer_token",
+    "time" : {
+      "start" : 1683884664959,
+      "stop" : 1683884665298,
+      "duration" : 339
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "aaget_logger",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664959,
+      "duration" : 42
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 200 == 500\n +  where 200 = <Response [200]>.status_code",
+    "statusTrace" : "self = <testcase.buyer.test_003_add_cart.TestAddCartApi object at 0x00000255671CC880>\ncasename = 'sku_id已删除', sku_id = 22441, num = 1, expect_status = 500\n\n    @allure.story('添加购物车接口测试')\n    @allure.title('{casename}')\n    @pytest.mark.parametrize('casename,sku_id,num,expect_status', test_data)\n    def test_add_cart(self, casename, sku_id, num, expect_status):\n        # buyer_login()\n        # 调用立即购买接口，传入测试数据\n        resp = AddCartApi(sku_id=sku_id, num=num).send()\n        print(resp.text)\n        # 针对结果做断言\n        # 响应状态码\n>       assert resp.status_code == expect_status\nE       assert 200 == 500\nE        +  where 200 = <Response [200]>.status_code\n\ntestcase\\buyer\\test_003_add_cart.py:31: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "41feb9736e13c0e3",
+      "name" : "log",
+      "source" : "41feb9736e13c0e3.txt",
+      "type" : "text/plain",
+      "size" : 1505
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "买家接口测试"
+  }, {
+    "name" : "story",
+    "value" : "添加购物车接口测试"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.buyer"
+  }, {
+    "name" : "suite",
+    "value" : "test_003_add_cart"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAddCartApi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OU7UF4S"
+  }, {
+    "name" : "thread",
+    "value" : "22160-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.buyer.test_003_add_cart"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "casename",
+    "value" : "'sku_id已删除'"
+  }, {
+    "name" : "expect_status",
+    "value" : "500"
+  }, {
+    "name" : "num",
+    "value" : "1"
+  }, {
+    "name" : "sku_id",
+    "value" : "22441"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b69a7ab91bb71d42.json",
+  "parameterValues" : [ "'sku_id已删除'", "500", "1", "22441" ]
+}

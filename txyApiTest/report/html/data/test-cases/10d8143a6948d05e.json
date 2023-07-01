@@ -1,0 +1,150 @@
+{
+  "uid" : "10d8143a6948d05e",
+  "name" : "test_buy_now_exception[sku_id 不存在-4882626-1-500-004-不合法]",
+  "fullName" : "testcase.buyer.test_001_buy_now.TestBuyNowApi#test_buy_now_exception",
+  "historyId" : "a247ce96bed43c7d075518a8b40463db",
+  "time" : {
+    "start" : 1683884665313,
+    "stop" : 1683884665424,
+    "duration" : 111
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1683884664412,
+      "stop" : 1683884664917,
+      "duration" : 505
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "aaget_logger",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664969,
+      "duration" : 52
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_buyer_token",
+    "time" : {
+      "start" : 1683884664969,
+      "stop" : 1683884665312,
+      "duration" : 343
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "worker_id",
+    "time" : {
+      "start" : 1683884664917,
+      "stop" : 1683884664917,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "be9e8a9845a93f81",
+      "name" : "log",
+      "source" : "be9e8a9845a93f81.txt",
+      "type" : "text/plain",
+      "size" : 2427
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "testcase.buyer"
+  }, {
+    "name" : "suite",
+    "value" : "test_001_buy_now"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestBuyNowApi"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-OU7UF4S"
+  }, {
+    "name" : "thread",
+    "value" : "17716-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.buyer.test_001_buy_now"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "casename",
+    "value" : "'sku_id 不存在'"
+  }, {
+    "name" : "except_data_code",
+    "value" : "'004'"
+  }, {
+    "name" : "except_data_message",
+    "value" : "'不合法'"
+  }, {
+    "name" : "except_status",
+    "value" : "500"
+  }, {
+    "name" : "num",
+    "value" : "1"
+  }, {
+    "name" : "sku_id",
+    "value" : "'4882626'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "10d8143a6948d05e.json",
+  "parameterValues" : [ "'sku_id 不存在'", "'004'", "'不合法'", "500", "1", "'4882626'" ]
+}

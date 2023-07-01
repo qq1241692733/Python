@@ -1,0 +1,15 @@
+{
+  "total" : 16,
+  "items" : [ {
+    "uid" : "9645f88bd4a82d23d54450d7075b5a73",
+    "name" : "买家接口测试",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

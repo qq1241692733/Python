@@ -1,0 +1,306 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase.buyer",
+    "children" : [ {
+      "name" : "test_002_create_trade",
+      "children" : [ {
+        "name" : "TestCreateTrade",
+        "children" : [ {
+          "name" : "test_create_trade[BUY_NOW-PC]",
+          "uid" : "8fc67b97955ea47",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884664410,
+            "stop" : 1683884664410,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'PC'", "'BUY_NOW'" ]
+        }, {
+          "name" : "test_create_trade[BUY_NOW-WAP]",
+          "uid" : "87611e4423eb499",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884666997,
+            "stop" : 1683884666997,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'WAP'", "'BUY_NOW'" ]
+        }, {
+          "name" : "test_create_trade[BUY_NOW-NATIVE]",
+          "uid" : "636183411ae79263",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667055,
+            "stop" : 1683884667055,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'NATIVE'", "'BUY_NOW'" ]
+        }, {
+          "name" : "test_create_trade[BUY_NOW-MINI]",
+          "uid" : "3523f987b0c4aa92",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667115,
+            "stop" : 1683884667115,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'MINI'", "'BUY_NOW'" ]
+        }, {
+          "name" : "test_create_trade[CART-PC]",
+          "uid" : "395447b138a9c607",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667186,
+            "stop" : 1683884667186,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'PC'", "'CART'" ]
+        }, {
+          "name" : "test_create_trade[CART-WAP]",
+          "uid" : "36fc05079ecb52e1",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667247,
+            "stop" : 1683884667247,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'WAP'", "'CART'" ]
+        }, {
+          "name" : "test_create_trade[CART-NATIVE]",
+          "uid" : "1efe2220dd514ee",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667324,
+            "stop" : 1683884667324,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'NATIVE'", "'CART'" ]
+        }, {
+          "name" : "test_create_trade[CART-MINI]",
+          "uid" : "3ebd6b0f94110d8f",
+          "parentUid" : "1716503e86ba23362f171a448502a85b",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667385,
+            "stop" : 1683884667385,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'MINI'", "'CART'" ]
+        } ],
+        "uid" : "1716503e86ba23362f171a448502a85b"
+      } ],
+      "uid" : "1d87c15dc9ef73b1b9572c79d903878f"
+    }, {
+      "name" : "test_003_add_cart",
+      "children" : [ {
+        "name" : "TestAddCartApi",
+        "children" : [ {
+          "name" : "sku_id不存在",
+          "uid" : "841447df0f70cc8f",
+          "parentUid" : "8b137f0932e787a78627082bf3aea338",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884665299,
+            "stop" : 1683884665390,
+            "duration" : 91
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'sku_id不存在'", "500", "1", "2737727" ]
+        }, {
+          "name" : "sku_id已下架",
+          "uid" : "d1c20a281d93b50f",
+          "parentUid" : "8b137f0932e787a78627082bf3aea338",
+          "status" : "failed",
+          "time" : {
+            "start" : 1683884665484,
+            "stop" : 1683884665622,
+            "duration" : 138
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'sku_id已下架'", "500", "1", "20046" ]
+        }, {
+          "name" : "sku_id已删除",
+          "uid" : "b69a7ab91bb71d42",
+          "parentUid" : "8b137f0932e787a78627082bf3aea338",
+          "status" : "failed",
+          "time" : {
+            "start" : 1683884666998,
+            "stop" : 1683884667070,
+            "duration" : 72
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'sku_id已删除'", "500", "1", "22441" ]
+        }, {
+          "name" : "num为0",
+          "uid" : "5e53a98feb6a5741",
+          "parentUid" : "8b137f0932e787a78627082bf3aea338",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884667081,
+            "stop" : 1683884667169,
+            "duration" : 88
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'num为0'", "400", "0", "22064" ]
+        }, {
+          "name" : "num为-1",
+          "uid" : "b72c20cacf9462e4",
+          "parentUid" : "8b137f0932e787a78627082bf3aea338",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884667202,
+            "stop" : 1683884667327,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'num为-1'", "400", "-1", "22064" ]
+        }, {
+          "name" : "num超过库存",
+          "uid" : "edef68e5905b4e88",
+          "parentUid" : "8b137f0932e787a78627082bf3aea338",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884667334,
+            "stop" : 1683884667481,
+            "duration" : 147
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'num超过库存'", "500", "99999999", "22064" ]
+        } ],
+        "uid" : "8b137f0932e787a78627082bf3aea338"
+      } ],
+      "uid" : "71f6b0db04b8e01a1f8eb006c2809a4f"
+    }, {
+      "name" : "test_001_buy_now",
+      "children" : [ {
+        "name" : "TestBuyNowApi",
+        "children" : [ {
+          "name" : "test_buy_now_exception[sku_id 不存在-4882626-1-500-004-不合法]",
+          "uid" : "10d8143a6948d05e",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884665313,
+            "stop" : 1683884665424,
+            "duration" : 111
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'sku_id 不存在'", "'004'", "'不合法'", "500", "1", "'4882626'" ]
+        }, {
+          "name" : "test_buy_now_exception[产品已下架-542-1-500-004-不合法]",
+          "uid" : "e81b5d63bd030bb2",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "failed",
+          "time" : {
+            "start" : 1683884665486,
+            "stop" : 1683884665606,
+            "duration" : 120
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'产品已下架'", "'004'", "'不合法'", "500", "1", "'542'" ]
+        }, {
+          "name" : "test_buy_now_exception[产品已删除-551-1-500-004-不合法]",
+          "uid" : "4102c843c7eb54ca",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "failed",
+          "time" : {
+            "start" : 1683884667004,
+            "stop" : 1683884667109,
+            "duration" : 105
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'产品已删除'", "'004'", "'不合法'", "500", "1", "'551'" ]
+        }, {
+          "name" : "test_buy_now_exception[num超过库存-541-999999999-500-451-商品库存已不足，不能购买。]",
+          "uid" : "7a5d63e865cbc534",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884667136,
+            "stop" : 1683884667239,
+            "duration" : 103
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'num超过库存'", "'451'", "'商品库存已不足，不能购买。'", "500", "999999999", "'541'" ]
+        }, {
+          "name" : "test_buy_now_exception[num为负数-541--1-400-004-购买数量必须大于0]",
+          "uid" : "e090782f5d2f2b6",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884667247,
+            "stop" : 1683884667369,
+            "duration" : 122
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'num为负数'", "'004'", "'购买数量必须大于0'", "400", "-1", "'541'" ]
+        }, {
+          "name" : "test_buy_now_exception[num为0-541-0-400-004-购买数量必须大于0]",
+          "uid" : "c34c5e38228885c8",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "passed",
+          "time" : {
+            "start" : 1683884667378,
+            "stop" : 1683884667507,
+            "duration" : 129
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "'num为0'", "'004'", "'购买数量必须大于0'", "400", "0", "'541'" ]
+        }, {
+          "name" : "test_buy_now_sccess",
+          "uid" : "6fd7920db0241d6",
+          "parentUid" : "565fd12f2102e5f7bdc02557c091bd49",
+          "status" : "broken",
+          "time" : {
+            "start" : 1683884667515,
+            "stop" : 1683884669802,
+            "duration" : 2287
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "565fd12f2102e5f7bdc02557c091bd49"
+      } ],
+      "uid" : "0d987e4687fadd05db8a518323d742bf"
+    } ],
+    "uid" : "3333883924ce37e7c29124506bd113c6"
+  } ]
+}
